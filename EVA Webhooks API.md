@@ -21,6 +21,12 @@ Wird ausgelöst, wenn ein Nutzer ein Addon oder einen Hauptvertrag gekündigt ha
 ### event `abo_renewed`
 Wird ausgelöst, wenn ein Addon oder ein Hauptvertrag automatisiert verlängert wurde.
 
+### event `user_card_added`
+Wird ausgelöst, wenn eine physische Karte einem Nutzer zugeordnet wird.
+
+### event `user_card_updated`
+Wird ausgelöst, wenn eine physische Karte bearbeitet wird, in der Regel wenn sie invalidiert wird.
+
 ### event `ping`
 Event ohne Bedeutung, zum Test eines Webhooks.
 
@@ -83,7 +89,13 @@ curl -XGET -H 'Authorization: Bearer YOURTOKENHERE' -H "Content-Type: applicatio
 	    "email": "youruser@gmail.com",
 	    "memberID": null,
 	    ...
-	  }
+	  },
+	  "user_cards": [
+	    {
+	      "cardID": ";welkfjslkdf",
+	      "validUntil": null
+	    }
+	  ]
 	}
 }
 ```
