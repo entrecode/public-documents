@@ -1028,7 +1028,7 @@ Mail:
     placeholder: 'YX4wsYoZZr',
   },
   {
-    identifier: 'club.id',
+    identifier: 'club.name',
     value: '{{club.name}}',
     description: 'Club-Name',
     placeholder: 'Mein Club Musterstadt',
