@@ -77,7 +77,6 @@ curl -XGET -H 'Authorization: Bearer YOURTOKENHERE' -H "Content-Type: applicatio
 
 ```json
 {
-{
     "data": {
         "aboBookingID": "WXFc-NHm_X",
         "type": "contract",
@@ -129,7 +128,6 @@ curl -XGET -H 'Authorization: Bearer YOURTOKENHERE' -H "Content-Type: applicatio
             }
         ]
     }
-}
 }
 ```
 
