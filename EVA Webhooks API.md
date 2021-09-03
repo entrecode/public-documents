@@ -77,26 +77,59 @@ curl -XGET -H 'Authorization: Bearer YOURTOKENHERE' -H "Content-Type: applicatio
 
 ```json
 {
-	"data": {
-	  "abo_booking_id": "qyAIXmsqpi",
-	  ...
-	  "abo_definition": {
-	    "abo_definition_id": "odASDms3i",
-	    "title": "Flexi Abo",
-	    ...
-	  },
-	  "user": {
-	    "email": "youruser@gmail.com",
-	    "memberID": null,
-	    ...
-	  },
-	  "user_cards": [
-	    {
-	      "cardID": ";welkfjslkdf",
-	      "validUntil": null
-	    }
-	  ]
-	}
+{
+    "data": {
+        "aboBookingID": "WXFc-NHm_X",
+        "type": "contract",
+        "durationStart": "2021-07-29",
+        "durationEnd": "2021-09-30",
+        "isTerminated": null,
+        "hasFreeTrialPeriod": true,
+        "exportID": null,
+        "aboDefinition": {
+            "aboDefinitionID": "VRRby7PS24",
+            "title": "Flexi Abo",
+            "initialPrice": 3900,
+            "mainInterval": "P1M",
+            "mainIntervalPrice": 2490,
+            "initialIntervalDuration": "P4M",
+            "administrationFeeInterval": "P1Y",
+            "administrationFee": 4900,
+            "initialAdministrationFeeDuration": "P12M",
+            "initialAdministrationFee": 0,
+            "initialDuration": "P1M",
+            "renewalDuration": "P1M",
+            "terminationNoticePeriod": "P1M",
+            "freeTrialPeriod": "P14D",
+            "initialPriceIgnoresFreeTrialPeriod": false,
+            "isStandalone": true
+        },
+        "user": {
+            "email": "my_test_user@entrecode.de",
+            "memberID": "alsdfasldf",
+            "title": null,
+            "firstName": "Nicki",
+            "lastName": "Fisher",
+            "birthday": "1987-12-12",
+            "gender": "m",
+            "addressStreet": "Dornhaldenstr. 1",
+            "addressZipCode": "70199",
+            "addressCity": "Stuttgart",
+            "addressCountryCode": "DE",
+            "mobile": "+27 397 3372654",
+            "bankAccountIBAN": "DE61OZMT38030485013564",
+            "bankAccountBIC": "BARBGB2LTOO",
+            "bankAccountBankName": "test",
+            "bankAccountOwner": "Nicki Fisher"
+        },
+        "userCards": [
+            {
+                "cardID": "-3edfwdae",
+                "validUntil": null
+            }
+        ]
+    }
+}
 }
 ```
 
