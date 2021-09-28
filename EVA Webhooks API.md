@@ -1,7 +1,5 @@
 # EVA Webhooks API
 
-> ### Vorläufiger Entwurf
-
 Über die EVA Webhook API können sich externe Systeme für Webhooks registrieren, die bei gewissen Events im EVA-System automatisiert ausgelöst werden. Die externen Systeme können dann als Reaktion vordefinierte Daten abrufen oder verändern.
 
 Jede EVA-Clubapp hat eine eigene Webhook-API. 
@@ -167,3 +165,6 @@ Für den Datenabruf wird ein valider API Key benötigt.
 API Keys können im Appsite-Admin angelegt werden. Er kann nur beim Anlegen eingesehen werden und muss sofort gespeichert werden. API Keys können auch widerrufen werden. 
 
 Die Berechtigungen, welche Events von welchem API Key abgerufen werden können, können individuell angepasst werden.
+
+## Beispiel Implementation
+Beispiel Projekt (Node JS): https://github.com/entrecode/clubapp.eva-hook-reference
